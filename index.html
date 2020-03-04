@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <body>
+    <!-- Nav bar -->
+    <nav class="container navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="row">
+            <div class="col-lg-3  col-md-12 col-sm-12 centerText ">
+                <a class="navbar-brand" href="#">
+                    Lukas Hirsch
+                </a>
+            </div>
+            <!--    this section of the nav bar contains the links to other pages it is when the screen size is shrunk, it drops from the same level as my name
+
+            -->
+            <div class="col-lg-9 col-md-12 col-sm-12 col-12 width">
+                <!-- sub container allows for responsive navbar links to position correctly -->
+                <div class="container width">
+                    <div class="row width">
+                        <!-- disabled class changes the color of the link and indicates which page is being viewed. The span tag with class sr-only tells users with screen readers which page they are currently on -->
+                        <div class="col-4 centerText width">
+                            <a class="nav-link disabled" href="./index.html">
+                                Home 
+                                <span class="sr-only">
+                                    (current)
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-4 centerText width">
+                            <a class="nav-link " href="./portfolio.html">
+                                Portfolio 
+                            </a>
+                        </div>
+                        <div class="col-4 centerText width">
+                            <a class="nav-link" href="./contact.html">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main body container -->
+    <main class="container">
+        <h1>About Me</h1>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-lg-8 mainBackground">
+                <!-- container for subrow -->
+                <div class="container">
+                    <!-- subrow -->
+                    <div class="row">
+                        <!-- subcolumn for image -->
+                        <div class="col-6 ">
+                                <img class="meImg" src="images/me.jpg" alt="Lukas Hirsch">
+                               
+                        </div>
+                        <!-- subcolumn for second header -->
+                        <div class="col-6">
+                            <h2>/ Developer / Hiker / Music Producer / Carpenter / </h2>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- column spanning container for main text -->
+                        <div class="col">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis iure porro sapiente sunt, aspernatur pariatur, vel odit nobis reprehenderit quod iste a corporis rem dolorum commodi nesciunt error quae itaque?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut, autem modi repudiandae sunt laudantium ratione, amet provident, quibusdam totam repellat labore quos quia consequuntur praesentium. Recusandae atque cum modi!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem enim non autem illum vel odit reiciendis dolorum aperiam facere! Eligendi quis fugiat quae officiis laudantium porro quia fugit ea.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- empty col is used to help with responsive spacing. it adjusts to fit whatever remaining space there is.  -->
+            <div class="col">
+                
+            </div>
+
+        </div>
+    </main>
+    <!-- Sticky footer -->
+    <footer class="footer bg-dark">
+        <div class="container centerText">
+            <span class="text-muted">Lukas Hirsch &copy; 2020</span>
+        </div>
+        </footer>
+  </body>
+</html>

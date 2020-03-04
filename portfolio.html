@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <body>
+    <!-- Nav bar -->
+            <nav class="container navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="row">
+                    <div class="col-lg-3  col-md-12 col-sm-12 centerText ">
+                        <a class="navbar-brand" href="#">
+                            Lukas Hirsch
+                        </a>
+                    </div>
+                    <!--    this section of the nav bar contains the links to other pages it is when the screen size is shrunk, it drops from the same level as my name
+
+                    -->
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-12 width">
+                        <!-- sub container allows for responsive navbar links to position correctly -->
+                        <div class="container width">
+                            <div class="row width">
+                                <!-- disabled class changes the color of the link and indicates which page is being viewed. The span tag with class sr-only tells users with screen readers which page they are currently on -->
+                                <div class="col-4 centerText width">
+                                    <a class="nav-link" href="./index.html">
+                                        Home 
+                                    </a>
+                                </div>
+                                <div class="col-4 centerText width">
+                                    <a class="nav-link disabled" href="./portfolio.html">
+                                        Portfolio 
+                                        <span class="sr-only">
+                                            (current)
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-4 centerText width">
+                                    <a class="nav-link" href="./contact.html">
+                                        Contact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- main container for portfolio items.  -->
+            <main class="container">
+                <h1>Portfolio</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 col-lg-8 mainBackground">
+                        <div class="row">
+                            <!-- each image is a link to a project. as projects are made placeholders will be replaced -->
+                            <div class="col-md-6">
+                                <a href="#"><img src="images/cat.jpg" alt="cat" class="portImg"></a>
+                                <!-- mark up for text positioned over image -->
+                                <p class="textOverImg">Cat Tracker</p>
+                            </div>
+                            <div class="col-md-6 ">
+                                <a href="#"><img src="images/record.jpg" alt="record" class="portImg"></a>
+                                <p class="textOverImg">Record Store</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#"><img src="images/kayak.jpg" alt="kayak" class="portImg"></a>
+                                <p class="textOverImg">Kayak Game</p>
+                            </div>
+                            <div class="col-md-6 ">
+                                <a href="#"><img src="images/digi.jpg" alt="digitakt" class="portImg"></a>
+                                <p class="textOverImg">Virtual Drum Machine</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#"><img src="images/graph.png" alt="graph" class="portImg"></a>
+                                <p class="textOverImg">Business Factory</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"><img src="images/vote.jpg" alt="cote" class="portImg"></a>
+                                <p class="textOverImg">Find My Polling Place</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- empty col is used to help with responsive spacing. it adjusts to fit whatever remaining space there is.  -->
+                    <div class="col">
+                    </div>
+                </div>
+            </main>
+
+        <!-- Sticky footer -->
+        <footer class="footer bg-dark">
+            <div class="container centerText">
+                <span class="text-muted">Lukas Hirsch &copy; 2020</span>
+            </div>
+        </footer>
+  </body>
+</html>
